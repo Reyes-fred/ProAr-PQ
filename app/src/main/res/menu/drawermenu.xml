@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Inicio"
+          android:id="@+id/nav_item_inicio"
+          android:icon="@drawable/sent"/>
+
+    <item android:title="Block de notas"
+          android:id="@+id/nav_item_notas"
+          android:icon="@drawable/sent"/>
+
+    <item android:title="Recordatorio"
+          android:id="@+id/nav_item_recordatorio"
+          android:icon="@drawable/sent"/>
+
+    <item android:title="Actividad Fisica"
+        android:id="@+id/nav_item_actividad"
+        android:icon="@drawable/sent"/>
+
+    <item android:title="Cuestionario Facit"
+        android:id="@+id/nav_item_cuestionario"
+        android:icon="@drawable/sent"/>
+
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="Perfil"
+            android:id="@+id/nav_item_perfil"
+            android:icon="@drawable/ajustes"/>
+
+        <item android:title="Ajustes"
+            android:id="@+id/nav_item_ajustes"
+            android:icon="@drawable/ajustes"/>
+
+        <item android:title="Cerrar Sesión"
+            android:id="@+id/nav_item_salida"
+            android:icon="@drawable/help"/>
+    </group>
+
+
+</menu>

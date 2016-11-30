@@ -1,0 +1,382 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdgeLength="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="false"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Me siento agotado(a)"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:id="@+id/text1"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans1"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text1"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Siento debilidad en todo el cuerpo"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text2"
+                android:layout_below="@id/ans1"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans2"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text2"
+
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Me siento decaído(a)"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text3"
+                android:layout_below="@id/ans2"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans3"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text3"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Me siento cansado(a)"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text4"
+                android:layout_below="@id/ans3"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans4"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text4"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tengo dificultad para comenzar las cosas porque estoy cansado(a)"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text5"
+                android:layout_below="@id/ans4"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans5"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text5"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tengo dificultad para terminar las cosas porque estoy cansado(a)"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text6"
+                android:layout_below="@id/ans5"
+              />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans6"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text6"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tengo energía"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text7"
+                android:layout_below="@id/ans6"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans7"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text7"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Soy capaz de hacer mis activdades habituales (p.ej.,trabajar,ir a la escuela,hacer las compras)"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text8"
+                android:layout_below="@id/ans7"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans8"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text8"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Necesito dormir durante el dia"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text9"
+                android:layout_below="@id/ans8"
+               />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans9"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text9"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Estoy demasiado cansado(a) para comer"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text10"
+                android:layout_below="@id/ans9"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans10"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text10"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Necesito ayuda para hacer mis actividades habituales"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text11"
+                android:layout_below="@id/ans10"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans11"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text11"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Estoy frustrado(a) porque esoty demasiado cansado(a) para hacer las cosas que quiero hacer"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text12"
+                android:layout_below="@id/ans11"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans12"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text12"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tengo que limitar mis actividades sociales debido al cansancio"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="#212121"
+                android:textColor="#212121"
+                android:textColorHint="#212121"
+                android:id="@+id/text13"
+                android:layout_below="@id/ans12"
+                />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ans13"
+                android:layout_marginTop="15dp"
+                android:hint="Escoje una respuesta"
+                android:fontFamily="sans-serif"
+                android:textColor="#212121"
+                android:backgroundTint="#212121"
+                android:textColorHint="#212121"
+                android:layout_below="@id/text13"
+                />
+
+            <Button
+                android:layout_width="240dp"
+                android:layout_height="45dp"
+                android:id="@+id/button"
+                android:background="#448AFF"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="25dp"
+                android:text="Enviar Cuestionario"
+                android:textColor="#F5F5F5"
+                android:textStyle="bold"
+                android:layout_below="@id/ans13"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

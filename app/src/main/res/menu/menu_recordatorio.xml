@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     >
+    <item android:id="@+id/action_today"
+        android:title="Hoy"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_day_view"
+            android:title="Días"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_three_day_view"
+            android:title="Tres días"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"
+            android:checked="true"/>
+    <item android:id="@+id/action_week_view"
+            android:title="Semana"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"/>
+
+</menu>

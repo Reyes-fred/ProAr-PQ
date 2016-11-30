@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".nuevorecordatorio"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <Button
+                android:id="@+id/date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/11/2015"/>
+
+            <Button
+                android:id="@+id/time_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15h 17m 00s"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/date_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/11/2015" />
+
+            <Button
+                android:id="@+id/time_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15h 17m 00s" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="Ingresa un mensaje....."
+                android:paddingLeft="10dp"
+                android:gravity="start"
+                android:id="@+id/mensaje" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:id="@+id/guardar"
+                android:background="#448AFF"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="#F5F5F5"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

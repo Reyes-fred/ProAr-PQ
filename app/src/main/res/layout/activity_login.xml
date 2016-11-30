@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginfondo"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha=".5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/user"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:backgroundTint="#F5F5F5"
+            android:shadowColor="#F5F5F5"
+            android:fontFamily="sans-serif"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#F5F5F5"
+            android:textColorHint="#F5F5F5">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="49dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:fontFamily="sans-serif"
+            android:shadowColor="#F5F5F5"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:backgroundTint="#F5F5F5"
+            android:textColor="#F5F5F5"
+            android:textColorHint="#F5F5F5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignTop="@+id/user"
+            android:adjustViewBounds="true"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/id" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/pass" />
+
+
+        <Button
+            android:id="@+id/Entrar"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="42dp"
+            android:background="#448AFF"
+            android:fontFamily="sans-serif"
+            android:text="Entrar"
+            android:textStyle="bold"
+            android:textColor="#F5F5F5"
+            android:layout_alignRight="@+id/pass"
+            android:layout_alignEnd="@+id/pass"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

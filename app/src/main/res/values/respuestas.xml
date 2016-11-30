@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="respuestas">
+        <item>Nada        0</item>
+        <item>Un poco     1</item>
+        <item>Algo        2</item>
+        <item>Mucho       3</item>
+        <item>Muchísimo   4</item>
+    </string-array>
+</resources>

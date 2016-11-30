@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:fadingEdgeLength="0dp"
+
+        android:fillViewport="false">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ScrollView1">
+
+            <RelativeLayout
+                android:id="@+id/fechaview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="fecha"
+                    android:textColor="#838383"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/primercontendio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fechaview"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pbpasos"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/pasos"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar" />
+
+                <TextView
+                    android:id="@+id/valor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="40dp"
+                    android:text="0"
+                    android:textColor="#838383"
+                    android:textSize="40dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="100dp"
+                    android:layout_centerInParent="true"
+                    android:text="pasos"
+                    android:textColor="#838383"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/segcontenido"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/primercontendio"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/pbvelocidad"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/velocidad"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar2" />
+
+                    <TextView
+                        android:id="@+id/vel0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#838383"
+                        android:textSize="35dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="km/h"
+                        android:textColor="#838383"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/pbdistancia"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="150dip"
+                        android:layout_height="150dip"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/distancia"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progressbar2" />
+
+                    <TextView
+                        android:id="@+id/dis0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#838383"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="km"
+                        android:textColor="#838383"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/segcontenido"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/_3g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom"
+                    android:text="Actualizar con 3g?"
+                    android:textColor="#838383" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_icon="@drawable/composea"
+        fab:fab_colorNormal="@color/blue_semi_transparent"
+        fab:fab_colorPressed="@color/blue_semi_transparent_pressed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+</RelativeLayout>
